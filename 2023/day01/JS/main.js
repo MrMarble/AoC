@@ -35,7 +35,7 @@ const readInput = async () =>
     };
 
     const s2 = lines.map((line)=>{
-      const numbers = Object.keys(words).reduce((acc,key)=>acc.replace(key,words[key]),line).split("").filter(Number)
+      const numbers = Object.keys(words).reduce((acc,key)=>acc.replaceAll(key,words[key]),line).split("").filter(Number)
       const first = numbers[0]
       const last = numbers.pop()
       return Number(first + last)
