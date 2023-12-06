@@ -16,8 +16,8 @@ jobs:
         with:
           userid: 1625767 # your user id, see setup on how to obtain
           session: ${{ secrets.AOC_SESSION }} # secret containing session code, see setup on how to obtain
-          year: 2022 # The year for which stats should be retrieved
-          file: "./2022/README.md" # The file that contains the badges
+          year: 2023 # The year for which stats should be retrieved
+          file: "./2023/README.md" # The file that contains the badges
 
       - uses: stefanzweifel/git-auto-commit-action@v4 # Step that pushes these local changes back to your github repo
         with:
